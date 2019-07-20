@@ -14,7 +14,6 @@ class PriorQueue:
 
         # иначе вставляем в очередь, ключ - частота
         for i in range(self.size):
-            # insert(index, element)
             if self.queue[i].frequency > element.frequency:
                 self.queue.insert(i, element)
                 break
@@ -23,15 +22,6 @@ class PriorQueue:
                 self.queue.insert(i, element)
 
         self.size += 1
-
-    # то же самое, но бинарные вставки
-    def binary_insert(self, element):
-        if a[self.size//2] == need:
-            # +1 т.к. будет меньше перестановок
-            self.queue.insert(self.size//2 + 1)
-
-        # ????
-
 
     def remove(self):
         self.size -= 1
