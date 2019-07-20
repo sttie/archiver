@@ -1,8 +1,6 @@
 from classes import *
 
 def create_bin_codes(main_node, bin_codes, code):
-    # ВМЕСТО СЛОВАРЯ СДЕЛАЙ СПИСОК!!!
-
     if main_node.left_child is not None:
         code.append("0")
 
