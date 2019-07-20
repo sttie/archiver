@@ -61,5 +61,3 @@ del tree, code
 for i in source:
     print(bin_codes[i], end="")
 print()
-
-# еще поэксперементируй с void* в Си
