@@ -1,4 +1,4 @@
-from classes import *
+from queue import *
 
 def create_bin_codes(main_node, bin_codes, code):
     if main_node.left_child is not None:
