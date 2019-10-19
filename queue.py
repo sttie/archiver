@@ -1,6 +1,4 @@
 class PriorQueue:
-    # сортируется по неубыванию
-
     def __init__(self):
         self.queue = []
         self.size = 0
@@ -19,7 +17,7 @@ class PriorQueue:
                 break
 
             if i == self.size - 1:
-                self.queue.insert(i, element)
+                self.queue.insert(i + 1, element)
 
         self.size += 1
 
@@ -50,10 +48,6 @@ class Node:
         else:
             self.right_child = first_child
             self.left_child = second_child
-
-
-    def put(self, first_child, second_child):
-        pass
 
     def __repr__(self):
         return "({0}, {1})".format(self.letter, self.frequency)
