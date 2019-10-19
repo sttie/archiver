@@ -36,8 +36,8 @@ def make_tree(source, encoding="ascii"):
         freq[ord(i)] += 1
 
     for i in range(len(freq)):
-        if freq[i] == 0: continue
-        main_queue.insert(Node(chr(i), freq[i]))
+        if freq[i] != 0:
+            main_queue.insert(Node(chr(i), freq[i]))
 
     for i in range(len(main_queue) - 1):
         first_node = main_queue.remove()
