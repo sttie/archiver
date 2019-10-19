@@ -24,9 +24,11 @@ def create_bin_codes(main_node, bin_codes, code):
 
 def make_tree(source, encoding="ascii"):
     freq = None
-    if encoding == "ascii": freq = [0] * 128
+    if encoding == "ascii":
+        freq = [0] * 128
     # TODO: utf-8 support
-    elif encoding == "utf-8": pass
+    elif encoding == "utf-8":
+        pass
 
     main_queue = PriorQueue()
 
